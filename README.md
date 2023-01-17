@@ -1,2 +1,2 @@
-# Hol
-Repository for Holiday Studies.
+# Study
+Repository for Vacations Studies.
