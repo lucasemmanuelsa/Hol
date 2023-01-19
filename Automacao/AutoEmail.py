@@ -3,10 +3,10 @@ import pyperclip
 import time
 import pandas
 
+pyautogui.PAUSE = 1
 
 #baixar base de dados
 pyautogui.hotkey("win")
-time.sleep(2)
 pyautogui.write("opera")
 pyautogui.hotkey("enter")
 time.sleep(5)
@@ -16,11 +16,8 @@ pyautogui.hotkey("enter")
 time.sleep(5)
 
 pyautogui.click(x=692, y=433, clicks=2)
-time.sleep(2)
 pyautogui.click(x=770, y=534)
-time.sleep(2)
 pyautogui.click(x=2211, y=245)
-time.sleep(2)
 pyautogui.click(x=1798, y=957)
 
 time.sleep(8)
@@ -41,15 +38,12 @@ pyautogui.hotkey("ctrl", "v")
 pyautogui.hotkey("enter")
 time.sleep(4)
 pyautogui.click(x=119, y=197)
-time.sleep(2)
 pyautogui.write("king")
-time.sleep(2)
 pyautogui.hotkey("tab")
-time.sleep(1)
 pyautogui.hotkey("tab")
 pyautogui.write("Teste de automacao")
 pyautogui.hotkey("tab")
-time.sleep(2)
+
 texto = f"""
 Olá, boa tarde!
 O faturamento de ontem foi de R${totalValue},00
@@ -66,26 +60,15 @@ time.sleep(4)
 
 #delete archive
 pyautogui.hotkey("win")
-time.sleep(3)
 pyautogui.write("Expl")
-time.sleep(2)
 pyautogui.hotkey("enter")
-time.sleep(3)
 pyperclip.copy(r"C:\Users\lucas\Downloads")
-time.sleep(2)
 pyautogui.click(x=1476, y=233)
-time.sleep(2)
 pyautogui.hotkey("ctrl", "v")
-time.sleep(2)
 pyautogui.hotkey("enter")
-time.sleep(2)
 pyautogui.hotkey("ctrl", "f")
-time.sleep(2)
 pyautogui.write("vendas")
-time.sleep(2)
 pyautogui.hotkey("enter")
-time.sleep(2)
 pyautogui.click(x=1941, y=541)
-time.sleep(1)
 pyautogui.hotkey("v")
 pyautogui.hotkey("del")
